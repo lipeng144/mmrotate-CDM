@@ -17,5 +17,5 @@ model = dict(
             gamma=2.0,
             alpha=0.25,
             loss_weight=1.0),
-        loss_bbox=dict(type='GDLoss', loss_type='gwd', loss_weight=5),
+        loss_bbox=dict(type='GDLoss', loss_type='gwd', loss_weight=1),
         loss_angle=dict(type='mmdet.L1Loss', loss_weight=0.2)))
