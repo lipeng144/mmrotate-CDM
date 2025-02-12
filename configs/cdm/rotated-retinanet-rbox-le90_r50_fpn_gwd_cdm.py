@@ -7,10 +7,8 @@ model = dict(
         type='CDAngleBranchRetinaHead',
         use_normalized_angle_feat=True,
         angle_coder=dict(
-            type='ACMCoder',
+            type='CDMCoder',
             angle_version=angle_version,
-            dual_freq=False,
-            #base_omega=2
         ),
         reg_decoded_bbox=True,
         loss_cls=dict(
